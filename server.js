@@ -288,14 +288,6 @@ client.on("message", message => {
    if (message.content === 'ايسو')   {
      message.reply("chkon hada man3rfoch")
    }
-  if (message.content === 'go') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 20000; x++) {
-        message.channel.send(`**test**`)
-          .then(m => {
-            count++;
-          })
 if (message.content === "roll") {
     message.channel.send(
       ` **${message.author.username}**, you rolled a **${Math.floor(  Math.random() * 100
