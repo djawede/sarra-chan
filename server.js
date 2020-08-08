@@ -3,17 +3,6 @@ const app = express();
 const http = require("http");
 const fs = require("fs");
 const prefix = '$'
-const listener = app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
-});
-
-app.get("/", (request, response) => {
-  response.sendStatus(200);
-});
-setInterval(() => {
-  http.get(`https://sarra-chan.glitch.me/`);
-}, 280000);
-
 const Discord = require("discord.js");
 const myid = ["515138634513383425"];
 const client = new Discord.Client();
